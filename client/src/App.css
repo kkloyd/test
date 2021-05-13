@@ -1,0 +1,71 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  margin: 3em;
+}
+
+/* Form */
+.form {
+  display: flex;
+}
+.form-item {
+  margin: 0 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+input[type="text"] {
+  height: 15px;
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  outline: none;
+}
+input[type="text"]:focus {
+  border: 1px solid orange;
+}
+
+/* Utility classes */
+.mt1 {
+  margin-top: 1rem;
+}
+
+/* Buttons */
+.btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 0 15px;
+  height: 35px;
+  border: none;
+  color: white;
+  box-shadow: 1px 1px 2px 1px lightgray;
+}
+.btn:active {
+  box-shadow: none;
+}
+.btn:disabled {
+  cursor: not-allowed;
+  pointer-events: all;
+  box-shadow: 1px 1px 2px 1px lightgray;
+}
+
+.btn-primary {
+  background-color: rgb(111, 195, 223);
+}
+.btn-default {
+  background-color: gray;
+}
+.btn-danger {
+  background-color: red;
+}
+
+
+/* app styles */
+.courses-list {
+  list-style-type: circle;
+}
+.courses-list__item {
+  display: flex;
+}
